@@ -1,0 +1,51 @@
+﻿<Window x:Class="Increments_Grid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Increments_Grid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\nathe\Downloads\Telegram Desktop\beautiful-color-gradients-backgrounds.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Increment" Grid.Row="0" Grid.Column="0" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="2" HorizontalAlignment="Center"></Label>
+        <Label Content="Starting Value" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold" />
+        <TextBox x:Name="txtbox_start_inc" FontSize="23" Grid.Column="1" Margin="0,72,0,19" Grid.RowSpan="2" FontWeight="Bold"  />
+        <Label Content="Ending Value" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox_end_inc" Grid.Row="2" Grid.Column="1" FontSize="23" Margin="0,0,0,19" FontWeight="Bold" />
+        <Label Content="Increment By" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox_increment" Grid.Row="2" Grid.Column="1" FontSize="23" Margin="0,72,0,19" Grid.RowSpan="2" FontWeight="Bold"/>
+        <Button x:Name="btn_increment" Content="Submit" Grid.Row="4" Grid.ColumnSpan="2" Background="Lavender" Margin="123,10,123,10" FontSize="23" FontWeight="Bold" Click="btn_increment_Click"/>
+        <Label x:Name="lbl_increresult" Grid.Column="0" Grid.Row="5" FontSize="10" Grid.ColumnSpan="2" FontWeight="Bold"  />
+        
+
+        <Label Content="Decrement" Grid.Row="0" Grid.Column="2" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="2" HorizontalAlignment="Center"></Label>
+        <Label Content="Starting Value" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox_start_dec" FontSize="23" Grid.Column="3" Margin="0,72,0,19" Grid.RowSpan="2" FontWeight="Bold" />
+        <Label Content="Ending Value" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox_end_dec" Grid.Row="2" Grid.Column="3" FontSize="23" Margin="0,0,0,19" FontWeight="Bold" />
+        <Label Content="Decrement By" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" FontSize="23" FontWeight="Bold"/>
+        <TextBox x:Name="txtbox_dec" Grid.Row="2" Grid.Column="3" FontSize="23" Margin="0,72,0,19" Grid.RowSpan="2" FontWeight="Bold"/>
+        <Button x:Name="btn_decrement" Content="Submit" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" Background="Lavender" FontSize="23" FontWeight="Bold" Click="btn_decrement_Click" Margin="118,10,118,10"/>
+        <Label x:Name="lbl_deccreresult" Grid.Column="2" Grid.Row="5" FontSize="10" Grid.ColumnSpan="2" FontWeight="Bold"  />
+
+    </Grid>
+</Window>
