@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Background>
-        <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzEWb_EnhI-u81JDAm-SFMVqekR3tubap_w&usqp=CAU"></ImageBrush>
+        <ImageBrush ImageSource="C:\Users\nathe\Downloads\Telegram Desktop\beautiful-color-gradients-backgrounds.jpg"></ImageBrush>
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
